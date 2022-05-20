@@ -133,23 +133,27 @@ input {
     background: rgb(255, 255, 255);
     border-radius: 1em;
     box-shadow: 2px 3px 10px 2px rgb(0 0 0 / 0.2);
+;
 }
 
 .pokemon-info>img {
     height: 600px;
     min-width: 600px;
     align-self: center;
+
 }
 
 .pokemon-info>h2{
     font-size: 1.5em;
     margin-top: 1em;
     margin-bottom: 1em;
+
 }
 
 .pokemon-info>label {
     margin-top: 1em;
     margin-bottom: 1em;
+
 }
 
 #refresh-button {
