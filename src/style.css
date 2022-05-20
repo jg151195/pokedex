@@ -1,0 +1,155 @@
+@import url('http://fonts.cdnfonts.com/css/invisible-2');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Invisible', sans-serif;
+
+}
+
+header {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 8px -2px lightblue;
+}
+
+input {
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+
+.icon {
+    position: absolute;
+    left: 0.8rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+
+.group {
+    margin-top: 1em;
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+}
+
+.logo {
+    height: 200px;
+    margin: 20px;
+}
+
+.imgPokemonData {
+    width: 400px;
+    height: 400px;
+}
+
+.section-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.item-list {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    margin: 5px;
+    min-width: 16%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: 0.3s;
+}
+
+.item-list:hover {
+    transform: scale(1.15)
+}
+
+.img-list {
+    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.item-list-info {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.filters-container {
+    margin-top: 1em;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.filter-button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+}
+
+.filter-button:hover{
+    transform: scale(1.15)
+}
+
+.pokemon-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30em;
+    background: rgb(255, 255, 255);
+    border-radius: 1em;
+    box-shadow: 2px 3px 10px 2px rgb(0 0 0 / 0.2);
+    transition: 1.5s;
+}
+
+.pokemon-info>img {
+    height: 400px;
+    width: 400px;
+    align-self: center;
+}
+
+.pokemon-info>h2{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.pokemon-info>label {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#refresh-button {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 100px;
+    transition: 0.2s;
+}
+
+#refresh-button:hover{
+    transform: scale(1.15)
+}
