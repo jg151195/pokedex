@@ -23,7 +23,7 @@ export default function PokemonListSection({ pokemonInput, pokemonData, pokemonL
                 </div> :
                 <div>{pokemonInput === "" ? 
                 <div className="list-all-pokemons">
-                    {listFilter.length>0 ? listFilter : list.length<151 ? 'loading': list}
+                    {listFilter.length>0 ? listFilter : list.length<151 ? 'Loading Pokemons...': list}
                 </div> : "Searching..."} 
                  </div>
             }
