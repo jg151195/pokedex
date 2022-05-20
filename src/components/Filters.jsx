@@ -1,11 +1,10 @@
 import React from "react";
-export default function Filters({pokemonList,setPokemonList}){
+export default function Filters({pokemonList,setFilteredList}){
 
     function filter(e){ 
         const {value} = e.target;
         const newList = pokemonList.filter(item => item.types[0] === value ||  item.types[1] === value);
-        console.log(newList)
-        setPokemonList(prev =>{
+        setFilteredList(prev =>{
             return prev = newList;
         });
     }

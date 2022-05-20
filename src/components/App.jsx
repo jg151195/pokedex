@@ -11,8 +11,9 @@ import Header from "./Header";
 export default function App() {
 
     const [pokemonList, setPokemonList] = useState([]);
-    const [pokemonData, setPokemonData] = useState({})
-    const [pokemonInput, setPokemon] = useState("")
+    const [pokemonData, setPokemonData] = useState({});
+    const [pokemonInput, setPokemon] = useState("");
+    const [filteredList, setFilteredList] = useState([]);
 
     //função para buscar dados na API
 
@@ -75,9 +76,9 @@ export default function App() {
     }
     return (
         <div>
-            <Header logo={pokemonLogo} searchLogo={searchLogo} pokemonInput={pokemonInput} handleChange={handleChange} pokemonList={pokemonList} setPokemonList={setPokemonList}
+            <Header setFilteredList={setFilteredList} logo={pokemonLogo} searchLogo={searchLogo} pokemonInput={pokemonInput} handleChange={handleChange} pokemonList={pokemonList} setPokemonList={setPokemonList}
              />
-            <PokemonListSection pokemonInput={pokemonInput} pokemonData={pokemonData} handleChange={handleChange} pokemonList={pokemonList} getElementInfo={(e) => getElementInfo(e)}
+            <PokemonListSection filteredList={filteredList} pokemonInput={pokemonInput} pokemonData={pokemonData} handleChange={handleChange} pokemonList={pokemonList} getElementInfo={(e) => getElementInfo(e)}
            />
         </div >
 

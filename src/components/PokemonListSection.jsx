@@ -1,9 +1,13 @@
 import React from "react";
 import ListElement from "./ListElement";
 
-export default function PokemonListSection({ pokemonInput, pokemonData, pokemonList, getElementInfo}) {
+export default function PokemonListSection({ pokemonInput, pokemonData, pokemonList, getElementInfo ,filteredList}) {
 
     const list = pokemonList.map(({ id, name, img, types },index) => {
+        return <ListElement key={index} id={id} name={name} img={img} types={types}  getElementInfo={(e)=>getElementInfo(e)} />
+    })
+
+    const listFilter = filteredList.map(({ id, name, img, types },index) => {
         return <ListElement key={index} id={id} name={name} img={img} types={types}  getElementInfo={(e)=>getElementInfo(e)} />
     })
 
@@ -19,8 +23,9 @@ export default function PokemonListSection({ pokemonInput, pokemonData, pokemonL
                 </div> :
                 <div>{pokemonInput === "" ? 
                 <div className="list-all-pokemons">
-                    {list.length === 0 ? "Not found ! Refresh filter !": list}
-                </div> : "Searching..."} </div>
+                    {listFilter.length>0 ? listFilter : list.length<151 ? 'loading': list}
+                </div> : "Searching..."} 
+                 </div>
             }
         </section>
     )
