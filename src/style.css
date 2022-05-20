@@ -59,14 +59,13 @@ input {
 .section-list {
     display: flex;
     justify-content: center;
-    text-align: center;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
 .item-list {
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     display: inline-flex;
     align-items: center;
     margin: 5px;
@@ -76,6 +75,13 @@ input {
     border: none;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     transition: 0.3s;
+}
+
+.list-all-pokemons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .item-list:hover {
@@ -103,9 +109,12 @@ input {
 }
 
 .filter-button {
+    display: flex;
+    justify-content: center;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     padding: 15px;
+    width: 4.5%;
     border-radius: 20px;
     border: none;
     color: rgb(0, 0, 0);
@@ -118,10 +127,9 @@ input {
 
 .pokemon-info {
     display: flex;
-    font-size: 1.1em;
+    font-size: 1.2rem;
     flex-direction: column;
     align-items: center;
-    min-width: 40em;
     background: rgb(255, 255, 255);
     border-radius: 1em;
     box-shadow: 2px 3px 10px 2px rgb(0 0 0 / 0.2);
