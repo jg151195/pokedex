@@ -20,12 +20,6 @@ header {
     min-width: 100%;
 }
 
-@media screen and (max-width: 540px) {
-    header {
-        width: 400px;
-    }
-}
-
 input {
     height: 40px;
     font-size: 1.1em;
@@ -113,13 +107,14 @@ input {
     padding: 20px;
     display: flex;
     min-width: 100%;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .filter-button {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    margin: 5px;
     font-size: 1.1rem;
     padding: 15px;
     width: 4.5%;
