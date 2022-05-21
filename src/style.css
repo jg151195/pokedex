@@ -7,6 +7,10 @@
     font-family: 'Invisible', sans-serif;
 }
 
+.root {
+    width: 100%;
+}
+
 header {
     background-color: red;
     display: flex;
@@ -58,7 +62,7 @@ input {
 }
 
 .section-list {
-   min-width: 100%;
+    min-width: 980px;
     margin-top: 2em;
     margin-bottom: 2em;
 }
