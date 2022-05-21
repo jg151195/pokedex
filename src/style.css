@@ -13,7 +13,7 @@ header {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 8px 8px -2px lightblue;
-    width: 100%;
+    min-width: 100%;
 }
 
 input {
@@ -58,7 +58,7 @@ input {
 }
 
 .section-list {
-    width: 100%;
+   min-width: 100%;
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -79,7 +79,7 @@ input {
 
 .list-all-pokemons{
     text-align: center;
-    width: 100%;
+    min-width: 100%;
 }
 
 .item-list:hover {
