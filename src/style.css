@@ -108,8 +108,9 @@ input {
     margin-top: 1em;
     padding: 20px;
     display: flex;
-    min-width: 100%;
+    justify-content: center;
     flex-wrap: wrap;
+    min-width: 100%;
 }
 
 .filter-button {
@@ -167,7 +168,8 @@ input {
     min-width: 4.5%;
     font-size: 1.1em;
     border: none;
-    padding: 15px;
+    padding: 5px;
+    height: 2.5em;
     border-radius: 5px;
     margin-right: 100px;
     transition: 0.2s;
