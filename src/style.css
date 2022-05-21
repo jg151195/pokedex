@@ -52,7 +52,7 @@ input {
 }
 
 .logo {
-    height: 200px;
+    height: 170px;
     margin: 20px;
 }
 
@@ -62,6 +62,8 @@ input {
 }
 
 .section-list {
+    display: flex;
+    justify-content: center;
     min-width: 100%;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -115,9 +117,9 @@ input {
     justify-content: center;
     cursor: pointer;
     margin: 5px;
-    font-size: 1.1rem;
+    font-size: 1em;
     padding: 15px;
-    width: 4.5%;
+    min-width: 4.5%;
     border-radius: 20px;
     border: none;
     color: rgb(0, 0, 0);
@@ -131,6 +133,8 @@ input {
 .pokemon-info {
     display: flex;
     font-size: 1.2rem;
+    min-width: 50%;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     background: rgb(255, 255, 255);
@@ -160,6 +164,7 @@ input {
 
 #refresh-button {
     cursor: pointer;
+    min-width: 4.5%;
     font-size: 1.1em;
     border: none;
     padding: 15px;
