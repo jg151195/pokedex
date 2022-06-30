@@ -1,1 +1,1 @@
-<a href="reactpokex-app.netlify.app">Link para o projeto</a>
+<a href="https://reactpokex-app.netlify.app">Link para o projeto</a>
